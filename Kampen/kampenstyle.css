@@ -1,0 +1,13 @@
+.Button {
+    background-color: #769147;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;  
+    &:hover{
+        background-color: #303a1e
+    }
+}
+.InformatieText {
+    max-width: 75vw;      
+}
