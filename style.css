@@ -1,7 +1,59 @@
-.Menu {
+/* basis menu */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  position: relative; /* nodig voor de dropdown */
+  display: inline-block;
+}
+
+/* link styling */
+.menu-item > a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #769147;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* dropdown menu */
+.dropdown {
+  display: none;          /* verberg standaard */
+  position: absolute;
+  top: 100%;              /* direct onder parent */
+  left: 0;
+  background-color: #769147;
+  border-radius: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* dropdown items */
+.dropdown li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+/* hover effect voor dropdown */
+.menu-item:hover .dropdown {
+  display: block;        /* laat dropdown zien bij hover */
+}
+
+/* hover styling voor dropdown links */
+.dropdown li a:hover {
+  background-color: #769147;
+}
+.Button {
     background-color: #769147;
-    padding: 5px;
-    margin: 0px;
+    padding: 10px 20px;
+    border-radius: 5px;
     color: white;
     text-decoration: none;  
     &:hover{
