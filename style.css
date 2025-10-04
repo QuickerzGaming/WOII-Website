@@ -60,3 +60,14 @@
         background-color: #303a1e
     }
 }
+
+/* changes the font */
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
