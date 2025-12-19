@@ -1,0 +1,55 @@
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.Button {
+  background-color: #769147;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.Button:hover {
+  background-color: #303a1e;
+}
+
+.InformatieText {
+  max-width: 75vw;
+  margin: 20px ;
+  line-height: 1.6;
+}
+
+.navbar {
+        position: fixed;     /* Vastzetten aan de bovenkant */
+        top: 0;              /* positie bovenaan */
+        left: 0;
+        width: 100%;         /* volledige breedte */
+        background-color: #333;
+        padding: 15px;
+        display: flex;
+        gap: 20px;
+        z-index: 1000;       /* blijft boven andere elementen */
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .navbar a:hover {
+        text-decoration: underline;
+    }
+
+    /* Extra marge zodat de tekst niet onder de navbar valt */
+    .content {
+        margin-top: 70px;
+        padding: 20px;
+    }
