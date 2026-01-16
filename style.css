@@ -1,65 +1,3 @@
-/* basis menu */
-.menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu-item {
-  position: relative; /* nodig voor de dropdown */
-  display: inline-block;
-}
-
-/* link styling */
-.menu-item > a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #769147;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-/* dropdown menu */
-.dropdown {
-  display: none;          /* verberg standaard */
-  position: absolute;
-  top: 100%;              /* direct onder parent */
-  left: 0;
-  background-color: #769147;
-  border-radius: 5px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* dropdown items */
-.dropdown li a {
-  display: block;
-  padding: 10px 20px;
-  color: white;
-  text-decoration: none;
-}
-
-/* hover effect voor dropdown */
-.menu-item:hover .dropdown {
-  display: block;        /* laat dropdown zien bij hover */
-}
-
-/* hover styling voor dropdown links */
-.dropdown li a:hover {
-  background-color: #38481d;
-}
-.Button {
-    background-color: #769147;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: white;
-    text-decoration: none;  
-    &:hover{
-        background-color: #303a1e
-    }
-}
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
@@ -70,31 +8,11 @@ a {
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-.Titelblad {
-    background-image: url(Images/Bevrijding%20van%20Nederland%201944-1945%20_%20Nederlands%20Instituut%20voor%20Militaire%20Historie.png);
-    background-position: top left;
-    background-repeat: no-repeat;
-    top: 0;
-    left: 0;
-    position: relative;
-    width: 100%;
-}
-
-.Titel {
-    color: #ffffff
-
-}
 Body {
     background-color: #f4fdff;
 }
 
-p { 
-    max-width: 75vw;
-}
 
-Intro-tekst {
-    margin-top: 100px;
-}
 .navbar {
         position: fixed;     /* Vastzetten aan de bovenkant */
         top: 0;              /* positie bovenaan */
@@ -104,8 +22,10 @@ Intro-tekst {
         padding: 15px;
         display: flex;
         gap: 20px;
-        z-index: 1000;       /* blijft boven andere elementen */
-    }
+        z-index: 1000;
+        /* background-image: url(Images/Bevrijding%20van%20Nederland%201944-1945%20_%20Nederlands%20Instituut%20voor%20Militaire%20Historie.png);
+        */
+}
 
     .navbar a {
         color: white;
@@ -117,8 +37,8 @@ Intro-tekst {
         text-decoration: underline;
     }
 
-    /* Extra marge zodat de tekst niet onder de navbar valt */
     .content {
         margin-top: 70px;
         padding: 20px;
+        max-width: 70%;
     }
