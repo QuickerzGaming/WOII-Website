@@ -10,9 +10,15 @@ a {
 h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
+ul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
 
 Body {
-    background-color: #f4fdff;
+    background-color: #ebfbff;
 }
 
 

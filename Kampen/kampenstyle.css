@@ -53,3 +53,21 @@ body {
         margin-top: 70px;
         padding: 20px;
     }
+
+.Bronnenlijst {
+
+  .Bronnenlijst li{
+      list-style-type: none;
+
+  }
+  .Bronnenlijst a{
+    text-decoration: none;
+    color: #122c3b;
+    font-weight: bold;
+
+  }
+    .Bronnenlijst a:hover{
+      text-decoration: underline;
+    }
+}
+
