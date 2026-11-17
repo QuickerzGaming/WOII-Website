@@ -1,73 +1,142 @@
 
+/* Algemene instellingen */
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #ffffff;
+    color: #222222;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
+/* Navigatiebalk */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333333;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Pagina-inhoud */
+.content {
+    margin-top: 70px;
+    padding: 20px;
+}
+
+/* Koppen */
+h1, h2, h3, h4 {
+    color: #303a1e;
+    line-height: 1.3;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+h4 {
+    font-size: 17px;
+}
+
+/* Algemene tekst */
+p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Informatie tekst */
+.InformatieText {
+    max-width: 75vw;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+/* Knoppen */
 .Button {
-  background-color: #769147;
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-  margin: 10px 0;
+    background-color: #769147;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
 }
 
 .Button:hover {
-  background-color: #303a1e;
+    background-color: #303a1e;
 }
 
-.InformatieText {
-  max-width: 75vw;
-  margin: 20px ;
-  line-height: 1.6;
-}
-
-.navbar {
-        position: fixed;     /* Vastzetten aan de bovenkant */
-        top: 0;              /* positie bovenaan */
-        left: 0;
-        width: 100%;         /* volledige breedte */
-        background-color: #333;
-        padding: 15px;
-        display: flex;
-        gap: 20px;
-        z-index: 1000;       /* blijft boven andere elementen */
-    }
-
-    .navbar a {
-        color: white;
-        text-decoration: none;
-        font-size: 16px;
-    }
-
-    .navbar a:hover {
-        text-decoration: underline;
-    }
-
-    /* Extra marge zodat de tekst niet onder de navbar valt */
-    .content {
-        margin-top: 70px;
-        padding: 20px;
-    }
-
+/* Bronnenlijst */
 .Bronnenlijst {
+    margin-top: 30px;
+}
 
-  .Bronnenlijst li{
-      list-style-type: none;
+.Bronnenlijst ul {
+    padding-left: 0;
+    list-style-type: none;
+}
 
-  }
-  .Bronnenlijst a{
+.Bronnenlijst li {
+    list-style-type: none;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.Bronnenlijst a {
     text-decoration: none;
     color: #122c3b;
     font-weight: bold;
-
-  }
-    .Bronnenlijst a:hover{
-      text-decoration: underline;
-    }
 }
 
+.Bronnenlijst a:hover {
+    text-decoration: underline;
+}
+
+/* Bronverwijzingen in de tekst */
+.InformatieText a {
+    color: #122c3b;
+}
+
+/* Mobiele weergave */
+@media (max-width: 768px) {
+    .content {
+        padding: 15px;
+    }
+
+    .InformatieText {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .navbar {
+        gap: 15px;
+    }
+}
